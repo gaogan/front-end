@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.没有标量提升
+        // 2.不可以重复声明
+        // 3.不会给window增加属性
+        // 4.不可以被改变
+        let a;
+        var b;
+        const c=3;
+        c=1;
+        c=2
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    </script>
+</body>
+</html>

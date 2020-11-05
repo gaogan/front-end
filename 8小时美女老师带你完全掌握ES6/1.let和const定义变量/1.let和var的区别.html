@@ -10,12 +10,15 @@
         // var function 存在变脸提升
         // var 只会提前声明 funciton既声明又定义
         // 全局使用var和function会给window添加一个对象
-        console.log(a);
+        // 1.没有标量提升
+        // 2.不可以重复声明
+        // 3.不会给window增加属性
+        //console.log(a);
         console.log(getA);
 
-        var a=1;
+        let a=1;
         console.log('a: ', a);
-        console.log(window.b);
+        console.log(window.a);
         function getA(){
             
         }
